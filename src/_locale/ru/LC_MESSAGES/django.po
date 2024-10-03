@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is distributed under the same license as the PACKAGE package.
+# ALEXEY CHUDIN <kazqvaizer@gmail.com>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-26 06:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+#: inventory/apps.py:7
+msgid "Inventory"
+msgstr ""
+
+#: inventory/models/base.py:15 inventory/models/owners.py:8
+#: marketplace/models/listings.py:14 marketplace/models/marketplaces.py:7
+#: regions/models/regions.py:9 warehouse/models/warehouses.py:9
+msgid "Name"
+msgstr ""
+
+#: inventory/models/base.py:17
+msgid "EAN"
+msgstr ""
+
+#: inventory/models/base.py:20
+msgid "Measurement Unit"
+msgstr ""
+
+#: inventory/models/canonical.py:19
+msgid "Autosync"
+msgstr ""
+
+#: inventory/models/canonical.py:22
+msgid "Canonical product"
+msgstr ""
+
+#: inventory/models/canonical.py:23
+msgid "Canonical products"
+msgstr ""
+
+#: inventory/models/items.py:61
+msgid "Sku"
+msgstr ""
+
+#: inventory/models/items.py:65
+msgid "Inventory item"
+msgstr ""
+
+#: inventory/models/items.py:66
+msgid "Inventory items"
+msgstr ""
+
+#: inventory/models/owners.py:11
+msgid "Inventory owner"
+msgstr ""
+
+#: inventory/models/owners.py:12
+msgid "Inventory owners"
+msgstr ""
+
+#: marketplace/admin.py:38
+msgid "Marketplace items count"
+msgstr ""
+
+#: marketplace/apps.py:7 marketplace/models/listings.py:19
+#: marketplace/models/marketplaces.py:12
+msgid "Marketplace"
+msgstr ""
+
+#: marketplace/models/listings.py:28
+msgid "Listing"
+msgstr ""
+
+#: marketplace/models/listings.py:29
+msgid "Listings"
+msgstr ""
+
+#: marketplace/models/marketplace_items.py:8
+msgid "Pending confirmation"
+msgstr ""
+
+#: marketplace/models/marketplace_items.py:9
+msgid "Confirmed"
+msgstr ""
+
+#: marketplace/models/marketplace_items.py:10
+msgid "Declined"
+msgstr ""
+
+#: marketplace/models/marketplace_items.py:31
+msgid "External ID"
+msgstr ""
+
+#: marketplace/models/marketplace_items.py:39
+msgid "Marketplace item"
+msgstr ""
+
+#: marketplace/models/marketplace_items.py:40
+msgid "Marketplace items"
+msgstr ""
+
+#: marketplace/models/marketplaces.py:13
+msgid "Marketplaces"
+msgstr ""
+
+#: regions/apps.py:7 regions/models/regions.py:13
+msgid "Regions"
+msgstr ""
+
+#: regions/models/regions.py:12
+msgid "Region"
+msgstr ""
+
+#: warehouse/admin.py:25
+msgid "Warehouse items count"
+msgstr ""
+
+#: warehouse/apps.py:7 warehouse/models/warehouses.py:20
+msgid "Warehouse"
+msgstr ""
+
+#: warehouse/models/warehouse_items.py:32
+msgid "Stock"
+msgstr ""
+
+#: warehouse/models/warehouse_items.py:35
+msgid "Warehouse item"
+msgstr ""
+
+#: warehouse/models/warehouse_items.py:36
+msgid "Warehouse items"
+msgstr ""
+
+#: warehouse/models/warehouses.py:21
+msgid "Warehouses"
+msgstr ""
