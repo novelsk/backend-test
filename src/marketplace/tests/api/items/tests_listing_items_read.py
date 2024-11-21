@@ -7,9 +7,19 @@ pytestmark = [
 
 
 @pytest.fixture
-def marketplace_item(factory, listing):
-    item = factory.item()
+def item(factory):
+    return factory.item()
 
+
+@pytest.fixture
+def create_warehouse_items(item, factory):
+    factory.warehouse_item(item=item, stock=200, price=555)
+    factory.warehouse_item(item=item, stock=400, price=222)
+    factory.warehouse_item(item=item, stock=500, price=444)
+
+
+@pytest.fixture
+def marketplace_item(factory, item, listing):
     return factory.marketplace_item(
         listing=listing,
         product=item.product,
@@ -21,6 +31,7 @@ def marketplace_item(factory, listing):
 base_url = "/api/v1/marketplace/listings/"
 
 
+@pytest.mark.usefixtures("create_warehouse_items")
 @pytest.mark.parametrize(
     "get",
     (
@@ -35,6 +46,9 @@ def test_read_marketplace_item(api, listing, marketplace_item, get):
     assert got["gmid"] == str(marketplace_item.product.id)
     assert got["status"] == "confirmed"
     assert got["status_comment"] == "Hello darkness my old friend"
+    assert got["wh_total_stock"] == "1100.00"
+    assert got["wh_min_price"] == "222.00"
+    assert got["wh_max_price"] == "555.00"
 
 
 def test_read_marketplace_item_only_for_current_listing(
