@@ -1,4 +1,3 @@
-import json
 import random
 import string
 
@@ -82,8 +81,4 @@ class DRFClient(APIClient):
         if not len(response.content):
             return
 
-        content = response.content.decode("utf-8", errors="ignore")
-        if "application/json" in response._headers["content-type"][1]:
-            return json.loads(content)
-        else:
-            return content
+        return response.data
